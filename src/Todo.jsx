@@ -120,12 +120,7 @@ const Todo = () => {
           {completedTodos.map((todo) => (
             <li key={todo.id} className='flex justify-between items-center mt-2'>
               <div className='flex items-center'>
-                <input
-                  type='checkbox'
-                  className='mr-2'
-                  checked={!!selectedTodos[todo.id]}
-                  onChange={() => toggleSelectTodo(todo.id)}
-                />
+              
                 <input
                   type='checkbox'
                   className='mr-2'
